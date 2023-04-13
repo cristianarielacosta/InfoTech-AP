@@ -9,21 +9,16 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="../index.html"><h1>InfoTech<i class="bi bi-pc-display-horizontal"></i></h1></a>
+    <header>  
+        <a href="../index.html"><h1>InfoTech<i class="bi bi-pc-display-horizontal"></i></i></h1></a>
+        <div class="Buscador">
+            <label for="Buscador"></label>
+            <input class="Buscador" type="text" name="Buscador"><i class="bi bi-search"></i>
         </div>
-        <section class="Buscador">
-            <div class="Buscador">
-                <label for="Buscador">Buscador</label>
-                <input class="Buscador" type="text" name="Buscador"><i class="bi bi-search"></i>
-            </div>
-            <div class="Login">
-                <i class="bi bi-person-check-fill"></i>
-                <button class="btn-login">Login</button>
-                <button class="btn-register">Register</button>  
-            </div>
-        </section>
+        <div class="Login">
+            <a href="./logging.html" button class="btn-login">Login</button></a>
+            <a href="./register.html"button class="btn-register">Register</button></a>
+        </div>
     </header>
     <main>
         <div class="preguntas">
@@ -90,13 +85,15 @@
                 
                 <p><i class="bi bi-clock"></i> Lun a Vier 08:00 a 18:00</p>
             </div>
-            <div class="Suscribete">
-                <h3>SUSCRIBETE</h3>
-                <p>Recibe nuestras promociones</p>
-                <label for="email">Escribe tu email</label>
-                <input type="email" id="email" placeholder="matiasperez123@gmail.com">
-                <input type="submit" value="SUSCRIBIRSE">        
-            </div>
+            <form>
+                <div class="Suscribete">
+                    <h3>SUSCRIBETE</h3>
+                    <p>Recibe nuestras promociones</p>
+                    <label for="email">Escribe tu email</label>
+                    <input type="email" id="email" placeholder="matiasperez123@gmail.com" required>
+                    <input type="submit" value="SUSCRIBIRSE">        
+                </div>
+            </form>
         </section>
         <div class="derechos">    
             <p>

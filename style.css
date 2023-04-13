@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Poppins&family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #CF7500;
-    font-family: sans-serif;
+    font-family:'Poppins', sans-serif;
 }
 :root{
     color: #CF7500;
@@ -11,20 +12,28 @@
 /* HEADER */
 
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
     background-color: #1c2029;
     align-items: center;
-    min-height: 20vh;
+    min-height: 10vh;
     padding-top: 0;
     padding-left: 10vw;
     padding-right: 10vw;
+       
 }
 
 header h1{
     display: flex;
     height: 100%;
-    font-size: 5vmax;
-    -webkit-text-stroke: 1px black;
+    font-size: 4vw;
+    border: none;
 }
+
 
 
 div.contenedor{
@@ -35,8 +44,8 @@ div.contenedor{
 }
 
 div.contenedor .category_item{
-    font-size: 2vw;
-    padding: 1.5vh 1.2vw;
+    font-size: 1.8vw;
+    padding: 1vh 1vw;
     background-color: #CF7500;
     text-decoration: none;
     color: #1c2029;
@@ -56,7 +65,7 @@ section.Buscador{
     padding-bottom: 2vh;
 }
 
-div.Login{
+.Login{
     display: flex;
     margin-bottom: 2vh;
 }
@@ -69,42 +78,44 @@ div.Buscador{
 .btn-login{
     color: #1c2029;
     background-color: whitesmoke;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-right: 10px;
     margin-left: 5px;
-    border: whitesmoke solid 5px;
-    box-shadow: 10px 10px 10px;
+    border: whitesmoke solid 0.5vb;
+    box-shadow: 2vb;
+    padding: 0.5vw;
 }
 
 .btn-register{
     color: #1c2029;
-    background-color: #F0A500;
-    border-radius: 8px;
-    border: #F0A500 solid 5px;
-    box-shadow: 10px 10px 10px;
+    background-color: #CF7500;
+    border-radius: 10px;
+    box-shadow: 2vb;
+    padding: 0.5vw;
+    border: #CF7500 solid 0.5vb;
 }
 
 input.Buscador{
     display: flex;
-    width: 40vw;
+    width: 20vw;
     align-items: baseline;
     color: #1c2029;
-    box-shadow: 10px 10px 10px;
-    border-radius: 8px;
-    border: whitesmoke solid 5px;
+    box-shadow: 2vb;
+    border-radius: 10px;
+    border: whitesmoke solid 1vb;
     background-color: whitesmoke;
     margin-left: 0.5vw;
     margin-right: 0.5vw;
-    
+
 }
 
 /* MAIN */
 main{
-    background-color:#1d1f22 ;
+    background-color:#DDDDDD;
     padding-left: 10vw;
     padding-right: 10vw;
-    min-height: 100vh;
-    padding-top: 3vh;
+    min-height: 80%;
+    padding-top: 15vh;
     padding-bottom: 3vh;
 
 }
@@ -113,16 +124,22 @@ section.hero{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
 
 }
-h2{
-    font-size: 4vw;
+section.hero h1{
+    color: #1c2029;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 110% ;
+}
+
+section.hero img{
+    border-radius: 10px;
 }
 
 .img-contenedor{
-    width: 500px;
+    width: 60%;
     overflow: hidden;
 
 }
@@ -224,7 +241,7 @@ footer{
     width: 100%;
     padding-top: 2vh;
     padding-bottom: 2vh;
-    min-height: 5vh;
+    min-height: 20%;
 
 }
 
@@ -256,6 +273,19 @@ section.footer{
     padding: 2vw;
 }
 
+.InformacionUtil a{
+    color: whitesmoke;
+}
+
+.Contacto p{
+    color: whitesmoke;
+}
+
+.Suscribete p, label{
+    color: whitesmoke;
+}
+
+
 
 a{
     color: #CF7500;
@@ -263,16 +293,21 @@ a{
 
 }
 input{
-    background-color: #CF7500;
-    color: #1A1C20;
+    background-color: whitesmoke;
+    color: black;
     border-radius: 6px;
-    border-color:#CF7500;
     justify-content: center;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
 }
+
+.submit input {
+    background-color: #CF7500;
+    border-color: #CF7500;
+}
+
 ::placeholder{
-    color: #CF7500;
+    color: #1c2029;
 }
 
 .derechos{
@@ -284,28 +319,40 @@ input{
     padding-left: 15vw;
     padding-right: 15vw;
     justify-content: center;
+}
 
+.derechos p{
+    color: whitesmoke;
 }
 /* Main página atención al cliente */
 
+form.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 section.consulta{
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 30vh;
+    height: 80vh;
+    width: 80%;
     padding-top: 3vh;
     padding-bottom: 3vh;
-    border-top: #CF7500 0.2vw solid;
-    border-left: #CF7500 0.2vw solid;
-    border-right: #CF7500 0.2vw solid;
+    border: 2px solid #1A1C20;
     padding-left: 3vw;
     padding-right: 3vw;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 10px;
+}
+
+section.consulta label{
+    color: #1c2029;
 }
 
 .consulta h2{
     font-size:x-large;
+    color: #1A1C20;
 }
 .formulario{
     padding-bottom: 3vh;
@@ -318,48 +365,176 @@ section.consulta{
 
 
 textarea#mensaje{
-    display: flex;
-    width: 100%;
     height: 50vh;
-    background-color:#1A1C20;
-    border: #CF7500 0.2vw solid;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 2vh;
+    width: 100%;
+    padding: 1vw;
+    background-color: aliceblue;
 }
+
 
 .preguntas{
     display: flex;
     flex-direction: column;
-    border: #CF7500 0.2vw solid;
+    border: 2px solid #1A1C20;
     padding: 3vw;
     border-radius: 10px;
+    background-color: aliceblue;
 }
 .preguntas h2{
     font-size: x-large;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    color: #1A1C20;
 }
 
 .preguntas p{
     margin-top: 2vh;
     margin-bottom: 2vh;
+    color: #1A1C20;
 }
 
 .presentacion{
     display: flex;
     flex-direction: column;
-    border: #CF7500 0.2vw solid;
+    border: 2px solid #1A1C20;
     padding: 3vw;
     border-radius: 10px;
+    background-color: aliceblue;
 }
 .presentacion h2{
     font-size: x-large;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    color: #1A1C20;
 }
 
 .presentacion p{
     margin-top: 1vh;
     margin-bottom: 1vh;
+    color: #1A1C20;
+}
+
+
+/* a{
+    font-weight: 500;
+    display: inline-block;
+    color: #3d3c3c;
+} */
+
+
+
+.form-contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px;
+    z-index: 10;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.form-contenido .box{
+    border-color: #1A1C20;
+    border: 2px solid #1A1C20;
+    border-radius: 10px;
+    padding: 40px 50px;
+}
+
+.form-contenido h3{
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.2;
+    color: #1A1C20;
+    font-weight: 500;
+}
+
+.form-contenido .form{
+    margin: 25px 20px;
+}
+
+.form-contenido .input-box{
+    margin: 25px;
+}
+
+.form-contenido .input-control{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #1A1C20;
+    color: #1A1C20;
+    font-size: 16px;
+}
+
+.form-contenido .input-control:focus{
+    outline: none;
+}
+
+.form-contenido .input-link{
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+.form-contenido .btn{
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+    background-color: #1c2029;
+    border: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    color: whitesmoke;
+}
+
+.form-contenido p{
+    text-align: center;
+    margin: 10px;    
+}
+
+@media screen and (max-width: 1500px) {
+    .product_list .product-item{
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* header{
+        min-height: 10vh;
+        
+    } */
+    /* .contenedor> li{
+        float: inline-start;
+        width: 100%;        
+    }
+    .contenedor li ul{
+        position: fixed;
+        max-width: 50 vh;
+    } */
+
+    section.hero{
+        width: auto;
+    }
+    section.hero h1{
+        font-size: 100%;    
+    }
+    section.hero img{
+        width: 100%;    
+    } 
+    .product_list{        
+        display: block;
+        flex-direction: column;
+    }
+    .product_list .product-item{
+        width: 70vw;
+        align-items: center;
+    }
 }
