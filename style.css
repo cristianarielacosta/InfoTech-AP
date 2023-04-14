@@ -512,15 +512,22 @@ textarea#mensaje{
     /* header{
         min-height: 10vh;
         
-    } 
-    .contenedor> li{
-        float: inline-start;
-        width: 100%;        
+*/
+    .contenedor{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2vw;
     }
-    .contenedor li ul{
-        position: fixed;
-        max-width: 50 vh;
-    } */
+
+    div.contenedor .category_item{
+        display: flex;
+        font-size: 4.3vw;
+    }
+
+    a.category_item[category="desktop"] {
+        margin-right: 2.6vw;
+    }
 
     section.hero{
         display: flex;
