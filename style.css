@@ -413,6 +413,11 @@ section.consulta label{
     color: #1c2029;
 }
 
+#nombre, #email{
+    box-sizing: border-box;
+    width: 100%;
+}
+
 .consulta h2{
     font-size:x-large;
     color: #1A1C20;
