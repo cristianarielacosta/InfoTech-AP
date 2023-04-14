@@ -270,7 +270,8 @@ section.product_list{
 }
 .product_list .product-item img{
     width: 100%;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .product_list .product-item a{
     display: block;
