@@ -166,7 +166,7 @@ main{
     background-color:#DDDDDD;
     padding-left: 10vw;
     padding-right: 10vw;
-    min-height: 80%;
+
     padding-top: 15vh;
     padding-bottom: 3vh;
 
@@ -394,17 +394,13 @@ input{
 /* Main página atención al cliente */
 
 form.formulario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
+    width: 60vw;
 }
 section.consulta{
     background-color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     height: 80vh;
-    width: 80%;
+    width: 100%;
     padding-top: 3vh;
     padding-bottom: 3vh;
     border: 2px solid #1A1C20;
@@ -495,22 +491,18 @@ textarea#mensaje{
 
 
 form.form-main{
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 section.form-main{
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 .form-contenido{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    max-width: 450px;
     z-index: 10;
-    background-color: aliceblue;
     border-radius: 10px;
 }
 
@@ -519,6 +511,7 @@ section.form-main{
     border: 2px solid #1A1C20;
     border-radius: 10px;
     padding: 40px 50px;
+    background-color: aliceblue;
 }
 
 .form-contenido h3{
@@ -530,11 +523,11 @@ section.form-main{
 }
 
 .form-contenido .form{
-    margin: 25px 20px;
+    margin: 25px 20px; 
 }
 
 .form-contenido .input-box{
-    margin: 25px;
+    margin: 20px;
 }
 
 .form-contenido .input-control{
@@ -586,10 +579,10 @@ section.form-main{
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
    
     main{
-        padding-top: 30vh;
+        padding-top: 23vh;
     }
     .contenedor{
         display: flex;
@@ -657,17 +650,17 @@ section.form-main{
     }
     
     header h1{
-        font-size: 10vw;
-        margin-top: 2vh;        
-    }
+        font-size: 8vw;
+               
+    } 
     
-    section.consulta{        
+    /* section.consulta{        
         height: 80vh;
         width: 75%;       
-    }
+    } */
         
-    textarea#mensaje{
+    /* textarea#mensaje{
         height: 40vh;        
-    }
+    } */
 }
 
