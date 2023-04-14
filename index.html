@@ -13,16 +13,35 @@
     
 </head>
 <body>
-    <header>  
-        <a href="./index.html"><h1>InfoTech<i class="bi bi-pc-display-horizontal"></i></i></h1></a>
-        <div class="Buscador">
-            <label for="Buscador"></label>
-            <input class="Buscador" type="text" name="Buscador"><i class="bi bi-search"></i>
+    <header>
+        <div class="titulo">
+            <a href="./index.html"><h1>InfoTech<i class="bi bi-pc-display-horizontal"></i></h1></a>
         </div>
-        <div class="Login">
-            <a href="./pages/logging.html" button class="btn-login">Login</button></a>
-            <a href="./pages/register.html" button class="btn-register">Register</button></a>
-        </div>
+        <section class="Buscador">
+            <div class="Buscador">
+                <label for="Buscador"></label>
+                <input class="Buscador" type="text" name="Buscador"><i class="bi bi-search"></i>
+            </div>
+            <nav>
+                <ul class="menu-horizontal">
+                    <li>
+                        <a href="#"><i class="bi bi-person"></i></a>
+                        <ul class="menu-vertical">
+                            <li><a href="./pages/logging.html">Iniciar sesion</a></li>
+                            <li><a href="./pages/register.html">Registrarse</a></li>                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-list"></i></a>
+                        <ul class="menu-vertical">
+                            <li><a href="./pages/AtencionAlCliente.html">Atencion al Cliente</a></li>
+                            <li><a href="./pages/PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                            <li><a href="./pages/PresentacionPersonal.html">Presentacion Personal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </header>
     <main>
         <nav>
@@ -60,99 +79,99 @@
                     <section class="product_list">
                         <div class="product-item" category="impresoras">
                             <img src="img/impresora-hpinktank115.jpg" alt="Impresora Ink tank 115">
-                            <a href="#">Impresora HP<br>INK TANK 115<br>$75.499</a>
+                            <a href="#">Impresora HP<br>INK TANK 115<br>$75.499<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="impresoras">
                             <img src="img/impresora-deskjet2775.jpg" alt="Impresora DeskJet 2775">
-                            <a href="#">Impresora HP<br>DESKJET 2775<br>$47.399</a>
+                            <a href="#">Impresora HP<br>DESKJET 2775<br>$47.399<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="monitores">
                             <img src="img/monitorodyssey.jpg" alt="Imagen de monitor Odyssey">
-                            <a href="#"> Monitor 25' Odyssey G4<br>240hz Ips Samsung<br>$100.000</a>
+                            <a href="#"> Monitor 25' Odyssey G4<br>240hz Ips Samsung<br>$100.000<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="monitores">
                             <img src="img/samsunlf27.jpg" alt="Monitor Samsung LF27">
-                            <a href="#">Monitor 27' Samsung<br>LED LF27T350FH<br>$115.000</a>
+                            <a href="#">Monitor 27' Samsung<br>LED LF27T350FH<br>$115.000<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="notebooks">
                             <img src="img/notebook-lenovo14ada7.jpg" alt="Notebook Lenovo 14ADA7">
-                            <a href="#">Notebook Lenovo<br>IDEAPAD 14ADA7 AMD R5<br>$280.000</a>
+                            <a href="#">Notebook Lenovo<br>IDEAPAD 14ADA7 AMD<br>$280.000<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="notebooks">
                             <img src="img/notebook-hdc4020.jpg" alt="Notebook HDC-4020">
-                            <a href="#">Notebook HDC<br>CY-4020 INTEL CELERON<br>$80.000</a>
+                            <a href="#">Notebook HDC<br>CY-4020 INTEL CELERON<br>$80.000<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="desktop">
                             <img src="img/pc-gammerpcbox.jpg" alt="PC GAMMER PCBOX AEROCOOL">
-                            <a href="#">PC GAMER PCBOX <br>AEROCOOL<br>$254.599</a>
+                            <a href="#">PC GAMER PCBOX <br>AEROCOOL<br>$254.599<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="desktop">
                             <img src="img/pc-pcboxcorei5.jpg" alt="PCBOX CORE i5">
-                            <a href="#">PC PCBOX <br>INTEL CORE I5 <br>$219.999</a>
+                            <a href="#">PC PCBOX <br>INTEL CORE I5 <br>$219.999<br><button class="comprar">Comprar</button></a>
                         </div>                        
                         <div class="product-item" category="servidores">
                             <img src="img/servidor-dellt150.jpg" alt="Servidor Dell T150">
-                            <a href="#">Servidor Dell<br>Intel Xeon Ram 16gb<br>$688.999</a>
+                            <a href="#">Servidor Dell<br>Intel Xeon Ram 16gb<br>$688.999<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="servidores">
                             <img src="img/servidor-intelcorei7.jpg" alt="Servidor Intel Core i7">
-                            <a href="#">Servidor Intel<br>Core I7 11va 64gb<br>$780.699</a>
+                            <a href="#">Servidor Intel<br>Core I7 11va 64gb<br>$780.699<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="monitores">
                             <img src="img/monitor-philips271.jpg" alt="Monitor Philips 271">
-                            <a href="#">Monitor 27' Philips<br>W-LED 271E1SCA/55<br>$95.000</a>
+                            <a href="#">Monitor 27' Philips<br>W-LED 271E1SCA/55<br>$95.000<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="desktop">
                             <img src="img/pc-exoh3148e.jpg" alt="PC EXO H3148E">
-                            <a href="#">PC EXO <br>READY D1.H3148E<br>$194.599</a>
+                            <a href="#">PC EXO <br>READY D1.H3148E<br>$194.599<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="monitores">
                             <img src="img/monitor-noblexmk22.jpg" alt="Monitor Noblex MK22">                        
-                            <a href="#">Monitor 22' Noblex<br>LED MK22X7100<br>$50.000</a>
+                            <a href="#">Monitor 22' Noblex<br>LED MK22X7100<br>$50.000<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="impresoras">
                             <img src="img/impresora-epsonl3210.jpg" alt="Impresora Epson L3210">
-                            <a href="#">Impresora Epson<br>ECOTANK L3210<br>$131.399</a>
+                            <a href="#">Impresora Epson<br>ECOTANK L3210<br>$131.399<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="servidores">
                             <img src="img/servidor-hpmi110.jpg" alt="Servidor HP MI-110">
-                            <a href="#">Servidor HP<br>Gen 10 6 Core 16g Ddr4<br>$576.699</a>
+                            <a href="#">Servidor HP<br>Gen 10 6 Core 16g Ddr4<br>$576.699<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="monitores">
                             <img src="img/monitor-samsungg50.jpg" alt="Monitor Samsung G50">
-                            <a href="#">Monitor Gammer 24' Noblex<br>Pantalla Curva G50FZ<br>$105.000</a>
+                            <a href="#">Monitor 24' Noblex<br>Pantalla Curva G50FZ<br>$105.000<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="notebooks">
                             <img src="img/notebook-aceran515.jpg" alt="Notebook AN-515">
-                            <a href="#">Notebook Acer Gammer<br>AN515 INTEL CORE I5<br>$360.500</a>
+                            <a href="#">Notebook Acer<br>AN515 INTEL CORE I5<br>$360.500<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="desktop">
                             <img src="img/pc-gammergfast.jpg" alt="PC GAMMER GFAST">
-                            <a href="#">PC GAMMER GFAST<br>X-500 ROOKIE<br>$205.299</a>
+                            <a href="#">PC GAMMER GFAST<br>X-500 ROOKIE<br>$205.299<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="impresoras">
                             <img src="img/impresora-hpinktank315.jpg" alt="Impresora Epson 315">
-                            <a href="#">Impresora Epson<br>INK TANK 315<br>$98.999</a>
+                            <a href="#">Impresora Epson<br>INK TANK 315<br>$98.999<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="servidores">
                             <img src="img/servidor-lenovost50.jpg" alt="Servidor Lenovo ST50">
-                            <a href="#">Servidor Lenovo<br>Xeon E-2224g 16gb 1tb<br>$615.299</a>
+                            <a href="#">Servidor Lenovo<br>Xeon E-2224g 16gb 1tb<br>$615.299<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="notebooks">
                             <img src="img/notebool-exot56.jpg" alt="Notebook Exo T56">
-                            <a href="#">Notebook Exo<br> T56 INTEL CELEBRON<br>$114.500</a>
+                            <a href="#">Notebook Exo<br> T56 INTEL CELEBRON<br>$114.500<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="notebooks">
                             <img src="img/notebook-asusx515.jpg" alt="Notebook Asus X-515">
-                            <a href="#">Notebook Asus<br>  X515 INTEL CORE i3<br>$259.500</a>
+                            <a href="#">Notebook Asus<br>  X515 INTEL CORE i3<br>$259.500<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="impresoras">
                             <img src="img/impresora-3dender.jpg" alt="Impresora 3D ENDER">
-                            <a href="#">Impresora 3D<br>CREALITY ENDER 2 PRO<br>$88.999</a>
+                            <a href="#">Impresora 3D<br>CREALITY ENDER 2 PRO<br>$88.999<br><button class="comprar">Comprar</button></a>
                         </div>
                         <div class="product-item" category="desktop">
                             <img src="img/pc-pcboxcorei3.jpg" alt="PC PCBOX CORE i3">
-                            <a href="#">PC PCBOX<br>CORE i3<br>$189.999</a>
+                            <a href="#">PC PCBOX<br>CORE i3<br>$189.999<br><button class="comprar">Comprar</button></a>
                         </div>
 
 

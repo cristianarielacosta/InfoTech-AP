@@ -9,16 +9,35 @@
     <title>Document</title>
 </head>
 <body>
-    <header>  
-        <a href="../index.html"><h1>InfoTech<i class="bi bi-pc-display-horizontal"></i></i></h1></a>
-        <div class="Buscador">
-            <label for="Buscador"></label>
-            <input class="Buscador" type="text" name="Buscador"><i class="bi bi-search"></i>
+    <header>
+        <div>
+            <a href="../index.html"><h1>InfoTech<i class="bi bi-pc-display-horizontal"></i></h1></a>
         </div>
-        <div class="Login">
-            <a href="./pages/logging.html" button class="btn-login">Login</button></a>
-            <a href="./pages/register.html" button class="btn-register">Register</button></a>
-        </div>
+        <section class="Buscador">
+            <div class="Buscador">
+                <label for="Buscador"></label>
+                <input class="Buscador" type="text" name="Buscador"><i class="bi bi-search"></i>
+            </div>
+            <nav>
+                <ul class="menu-horizontal">
+                    <li>
+                        <a href="#"><i class="bi bi-person"></i></a>
+                        <ul class="menu-vertical">
+                            <li><a href="./logging.html">Iniciar sesion</a></li>
+                            <li><a href="./register.html">Registrarse</a></li>                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-list"></i></a>
+                        <ul class="menu-vertical">
+                            <li><a href="./AtencionAlCliente.html">Atencion al Cliente</a></li>
+                            <li><a href="./PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                            <li><a href="./PresentacionPersonal.html">Presentacion Personal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </header>
     <main>
         <form class="formulario">

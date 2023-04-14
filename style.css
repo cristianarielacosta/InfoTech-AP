@@ -24,7 +24,7 @@ header{
     padding-top: 0;
     padding-left: 10vw;
     padding-right: 10vw;
-       
+    z-index: 2;
 }
 
 header h1{
@@ -49,8 +49,13 @@ div.contenedor .category_item{
     background-color: #CF7500;
     text-decoration: none;
     color: #1c2029;
-    border-radius: 0.8vb;
+    border-radius: 10px;
 }
+
+div.contenedor .category_item:hover{    
+    scale: 1.1;
+}
+
 .contenedor .ct_item-active{
     background: #454545;
 }
@@ -107,6 +112,52 @@ input.Buscador{
     margin-left: 0.5vw;
     margin-right: 0.5vw;
 
+}
+
+header.nav{
+	max-width: 900px;
+	margin: 1px;
+	background-color: #333;
+	font-size: 20px;
+	margin-top: 0vh;
+    border-radius: 10px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal > li:hover{
+	background-color:#ccad84;
+    border-radius: 10px;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;    
+    border-radius: 10px;
+	width: 150px;
+	background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color: #CF7500;
+    border-radius: 10px;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
 }
 
 /* MAIN */
@@ -219,8 +270,7 @@ section.product_list{
 }
 .product_list .product-item img{
     width: 100%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 10px;
 }
 .product_list .product-item a{
     display: block;
@@ -235,7 +285,19 @@ section.product_list{
     border-bottom-right-radius: 10px;
 }
 
-
+.comprar{
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: #1c2029;
+    border: black 1px solid;
+    padding: 2px;
+}
+.comprar:hover{
+    background-color: #1c2029;
+    color: whitesmoke;
+    transition: 0.1s;
+    scale: 1.1;
+}
 
 /* FOOTER */
 footer{
@@ -325,6 +387,7 @@ input{
 
 .derechos p{
     color: whitesmoke;
+    text-align: center;
 }
 /* Main página atención al cliente */
 
@@ -403,10 +466,15 @@ textarea#mensaje{
     border-radius: 10px;
     background-color: aliceblue;
 }
+
+.presentacion h1{
+    color:#1A1C20;
+    text-align: center;
+}
+
 .presentacion h2{
     font-size: x-large;
     margin-top: 2vh;
-    margin-bottom: 2vh;
     color: #1A1C20;
 }
 
@@ -424,11 +492,19 @@ textarea#mensaje{
 } */
 
 
+form.form-main{
+    display: flex;
+    justify-content: center;
+}
+
+section.form-main{
+    display: flex;
+    justify-content: center;
+}
 
 .form-contenido{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
     max-width: 450px;
     z-index: 10;
@@ -508,26 +584,29 @@ textarea#mensaje{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     /* header{
         min-height: 10vh;
         
 */
+    main{
+        padding-top: 30vh;
+    }
     .contenedor{
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
         gap: 2vw;
     }
 
     div.contenedor .category_item{
-        display: flex;
-        font-size: 4.3vw;
+        font-size: 4vw;
+        width: 24vw;
+        text-align: center;
     }
 
-    a.category_item[category="desktop"] {
-        margin-right: 2.6vw;
-    }
+    /* a.category_item[category="desktop"] {
+        margin-right: 3vw;
+    } */
 
     section.hero{
         display: flex;
@@ -536,7 +615,8 @@ textarea#mensaje{
     }
     section.hero h1{
         font-size: 3vb;
-        align-content: center;    
+        align-content: center;
+        text-align: center;    
     }
     .img-contenedor{
         width: 100%;
@@ -565,5 +645,30 @@ textarea#mensaje{
         align-items: center;
     }
 
+    header{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-vertical{
+        width: 100px;
+        font-size: x-small;
+    }
+    
+    header h1{
+        font-size: 12vw;
+        margin-top: 3vh;        
+    }
+    
+    section.consulta{        
+        height: 80vh;
+        width: 75%;       
+    }
+        
+    textarea#mensaje{
+        height: 40vh;        
+    }
 }
 
