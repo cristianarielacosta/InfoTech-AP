@@ -654,10 +654,14 @@ section.form-main{
         width: 100px;
         font-size: x-small;
     }
+
+    header{
+        height: 20vh;
+        max-height: 20vh;
+    }
     
     header h1{
-        font-size: 8vw;
-               
+        font-size: 40px;    
     } 
     
     /* section.consulta{        
